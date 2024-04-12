@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANEX - REDE DE ENSINO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/fanex.png" type="image/x-icon">
+    <script src="script.js"></script>
+</head>
+
+<body style="background:linear-gradient(#081041,#001bb3,#0024f1);">
+    <header>
+        <nav>
+            <div class="nav-bar1">
+
+                <div class="logo-nav1"><img src="imagens/Logo-fanex.png" alt="" width="150px" height="50px"
+                        id="logo-fanex"></div>
+                <div class="lista-nav1">
+                    <ul>
+                        <a href="index.html">
+                            <li><img src="imagens/home.png" alt="" width="30px" id="icone" height="30px" id="icone">Home
+                            </li>
+                        </a>
+                        <a href="adm.html">
+                            <li> <img src="imagens/administracao.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Administração</li>
+                        </a>
+                        <a href="tst.html">
+                            <li><img src="imagens/tst.png" alt="" width="30px" id="icone" height="30px" id="icone">Seg. do trabalho
+                            </li>
+                        </a>
+                        <a href="enf.html">
+                            <li><img src="imagens/enfermagem.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Enfermagem</li>
+                        </a>
+                        <a href="elet.html">
+                            <li><img src="imagens/eletrotecnica.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Eletrotécnica</li>
+                        </a>
+                        <a href="mec.html">
+                            <li><img src="imagens/mecanico.png" alt="" width="30px" id="icone" height="30px"
+                                    id="icone">Mecânica</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="nav-bar2">
+
+                <div class="lista-nav2">
+                    <div class="menu-nav2">
+                        <img src="imagens/menu-nav.png" alt="" width="30px" id="icone" height="30px" id="icone"
+                            id="menu-nav" onclick="ClickMenu()">
+                    </div>
+                    <div id="itens">
+
+                        <ul>
+                            <a href="index.html">
+                                <li><img src="imagens/home.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Home</li>
+                            </a>
+                            <a href="adm.html">
+                                <li><img src="imagens/administracao.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Administração</li>
+                            </a>
+                            <a href="tst.html">
+                                <li><img src="imagens/tst.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Seg. do trabalho</li>
+                            </a>
+                            <a href="enf.html">
+                                <li><img src="imagens/enfermagem.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Enfermagem</li>
+                            </a>
+                            <a href="elet.html">
+                                <li><img src="imagens/eletrotecnica.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Eletrotécnica</li>
+                            </a>
+                            <a href="mec.html">
+                                <li><img src="imagens/mecanico.png" alt="" width="30px" id="icone" height="30px"
+                                        id="icone">Mecânica</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="calculo-fanex">
+            <div class="calculo-de-adm">
+                <img src="imagens/Logo-fanex.png" alt="">
+                <h1>Administração</h1>
+                <p>Calculo de nota</p>
+            </div>
+        
+                <hr>
+                <div class="unidades-adm">
+                    UNIDADE I: <br>
+                    <input type="number" id="calAdmU1"><br>
+                    UNIDADE II:<br>
+                    <input type="number" id="calAdmU2"><br>
+                    UNIDADE III:<br>
+                    <input type="number" id="calAdmU3"><br>
+                    UNIDADE IV:<br>
+                    <input type="number" id="calAdmU4">
+                </div>
+                <hr>
+                <div class="presenca-adm">
+                    AULA 01:<br>
+                    <input type="number" id="aula1"><br>
+                    AULA 02:<br>
+                    <input type="number" id="aula2"><br>
+                    AULA 03:<br>
+                    <input type="number" id="aula3"><br>
+                    AULA 04:<br>
+                    <input type="number" id="aula4"><br>
+                </div>
+                <hr>
+                <div class="provaN2-adm">
+                    PROVA N2:<br>
+                    <input type="number" id="provaN2">
+                </div>
+                <button type="submit" onclick="Calcular()">Calcular</button>
+           
+            <div class="resultado">
+                <h3>Media</h3>
+                <p id="resultadoMedia">???</p>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="icones-footer">
+            <div class="text-icones">Nos acompanhe nas redes sociais:</div><br>
+            <div style="display: flex;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;">
+                <div class="icon-footer"><a href="https://fanex.com.br/"><img src="imagens/fanex.png" alt=""></a></div>
+                <div class="icon-footer"><a href="https://www.instagram.com/fanexrededeensino/"><img
+                            src="imagens/instagram.png" alt=""></a></div>
+                <div class="icon-footer"><a
+                        href="https://web.whatsapp.com/send?phone=558496003333&text=Ol%C3%A1!%20estou%20no%20site%20da%20Fanex,%20na%20p%C3%A1gina%20https://fanex.com.br%20e%20tenho%20interesse,%20pode%20me%20ajudar?"><img
+                            src="imagens/whatsapp.png" alt=""></a></div>
+                <div class="icon-footer"><a href="https://www.youtube.com/@FanexRededeEnsino"><img
+                            src="imagens/youtube.png" alt=""></a></div>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <div class="foto-footer">
+                <img src="https://st.depositphotos.com/1325352/2998/v/450/depositphotos_29988359-stock-illustration-brazil-map-country.jpg "
+                    alt="" style="width:100%;max-width: 600px; height:auto;">
+            </div>
+            <div class="endereco-footer">
+                <div class="endereco-macau">
+                    <div class="endereco-macau-foto">
+                        <img src="imagens/fanex.png" alt="">
+                    </div>
+                    <div class="endereco-macau-informacao">
+                        <h1>Macau - RN</h1>
+                        <h2>Ensino Regular</h2>
+                        <p>Av. centernário, 125 - Centro</p>
+
+                        <h2>Escola Técnica</h2>
+                        <p> Rua Martins Ferreira, 245 - Centro</p>
+
+                        <div class="endereco-infomacao-fotos">
+
+                            <a href="https://www.google.com/maps/place/Fanex/@-5.116732,-36.632511,17z/data=!3m1!4b1!4m6!3m5!1s0x7b72bd2783f666b:0xc6e1d9c0416fd0c!8m2!3d-5.116732!4d-36.632511!16s%2Fg%2F11fk8znb3l?entry=ttue"><img src="imagens/pin.png" alt=""></a>
+                            <a href="tel:84996003333"><img src="imagens/telefone (1).png" alt=""></a>
+                            <a href="mailto:fanexrededeensino@gmail.com"><img
+                                    src="imagens/correspondencia.png" alt=""></a>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="endereco-Alto">
+                    <div class="endereco-Alto-foto">
+                        <img src="imagens/fanex.png" alt="">
+                    </div>
+                    <div class="endereco-Alto-informacao">
+                        <h1>Alto do Rodrigues - RN</h1>
+                        <h2>Escola Técnica</h2>
+                        <p>Av. Angelo Varela - Centro</p>
+                        <div class="endereco-infomacao-fotos">
+
+                            <a href="https://www.google.com/maps/place/Fanex+Rede+-+Rede+de+Ensino/@-5.2954661,-36.7624074,15z/data=!4m6!3m5!1s0x7b0db67eb72e489:0x6737968fdcda09b1!8m2!3d-5.295435!4d-36.7623299!16s%2Fg%2F11jwgyrzyc?entry=ttu"><img src="imagens/pin.png" alt=""></a>
+                            <a href="tel:84996029999"><img src="imagens/telefone (1).png" alt=""></a>
+                            <a href="mailto:fanexrededensino@gmail.com"><img
+                                    src="imagens/correspondencia.png" alt=""></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="feito-footer">
+            <img src="imagens/fanex.png" alt=""> Criado por <a href="https://web.whatsapp.com/send?phone=558496002433&text=Ol%C3%A1!%20estou%20no%20site%20da%20Fanex,%20na%20p%C3%A1gina%20https://fanex.com.br%20e%20tenho%20interesse,%20pode%20me%20ajudar?">Alison Ryan</a> - com todos os direitos reservados©
+        </div>
+
+    </footer>
+</body>
+
+</html>
